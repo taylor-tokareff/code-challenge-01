@@ -14,10 +14,25 @@ export function stringyMaJig(arr) {
 }
 
 export function theCapitolizer(arr) {
-  return arr.map(item => {
-    const firstLower = item.toLowerCase();
-    const nowUpper = item.toUpperCase[0]();
+  return arr.map(item =>
+    item[0].toUpperCase() + item.slice(1).toLowerCase());
+}
 
-    return something I dunno; __;
+export function namesOnly(arr) {
+  return arr.map(item => {
+    const happy = item.name;
+    return happy;
+  });
+}
+
+export function ageFunction(arr) {
+  return arr.map(item => {
+    return `${item.name} ${item.age < 18 ? 'is under age!!' : 'can go to The Matrix'}`;
+  });
+}
+
+export function makeHeader(arr) {
+  return arr.map(item => {
+    return `<h1>${item.name}</h1><h2>${item.age}</h2>`;
   });
 }
