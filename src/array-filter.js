@@ -7,6 +7,18 @@ export function evensOnly(arr) {
 }
 
 export function fiveGum(arr) {
-  return arr.filter(item => item.length < 5);
+  return arr.filter((item) => item.length < 6);
 }
 
+export const illuminati = arr => {
+  return arr.filter(person => {
+    if (person.member) return person;
+  });
+};
+
+export const ofAge = arr => {
+  return arr.filter(person => {
+    if (person.age >= 18) return person;
+    else return false;
+  });
+};
