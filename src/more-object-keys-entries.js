@@ -4,3 +4,11 @@ export function getHouses(obj) {
   });
   return houses;
 }
+export function changeNumbers(obj) {
+  const array = [];
+  Object.keys(obj).forEach(booger => {
+    console.log(booger);
+    array.push(`${booger}: ${obj[booger]}`);
+  });
+  return array;
+};
